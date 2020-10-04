@@ -364,10 +364,9 @@ body {
 }
 
 .intro-btn-wrapper {
-    text-align: right;
     position: absolute;
-    bottom: -250px;
-    right: 0;
+    bottom: 30%;
+    right: 20%;
 }
 
 .intro-btn {
@@ -422,6 +421,7 @@ body {
     padding-top: 70px;
     padding-bottom: 30px;
     position: relative;
+    overflow-x: hidden;
 
     background: linear-gradient(rgba(214, 210, 208, 0.9), rgba(214, 210, 208, 0.9)),url('../img/about/about-bg.jpg') no-repeat center;
     background-size: cover;
@@ -766,4 +766,17 @@ body {
 
 .share-url {
     padding-top: 13px;
+}
+
+/* appear effect */
+
+.about-text-wrapper {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: 0.5s all ease-in-out;
+}
+
+.about-text-appear {
+    opacity: 1;
+    transform: translateX(0);
 }
